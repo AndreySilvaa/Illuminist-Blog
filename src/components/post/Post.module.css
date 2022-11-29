@@ -1,0 +1,47 @@
+.post{
+    margin-bottom: 3em;
+}
+
+.post img{
+    max-width: 600px;
+}
+
+.post h2{
+    margin-bottom: .4em;
+}
+
+.post .tags{
+    margin-bottom: 1.2em;
+    display: flex;
+}
+
+.tags p{
+    margin-right: .5em;
+}
+
+.tags span{
+    font-weight: bold;
+}
+
+.createdby{
+    font-style: italic;
+    color: #444;
+    font-size: .8em;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width:700px){
+
+    .post{
+        text-align: center
+    }
+
+    .post img{
+        width: 90%;
+        min-width: 300px;
+    }
+
+    .post .tags{
+        justify-content: center;
+    }
+}

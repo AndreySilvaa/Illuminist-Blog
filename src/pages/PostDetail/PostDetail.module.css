@@ -1,0 +1,48 @@
+.post_container{
+    text-align: center;
+}
+
+.post_container h1{
+    margin: 1.5em 0;
+}
+
+.post_container img{
+    width: 100%;
+    max-width: 900px;
+    min-width: 280px;
+}
+
+.post_body{
+    width: 60vw;
+    margin: 2em auto;
+    text-align: left;
+    line-height: 28px;
+}
+
+.post_container h3{
+    margin-bottom: .2em;
+}
+
+.post_container .tags{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tags p{
+    margin-right: 1em;
+}
+
+.tags span{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px){
+    .post_container h1{
+        font-size: 1.5em;
+    }
+
+    .post_body{
+        width: 85vw;
+    }
+}

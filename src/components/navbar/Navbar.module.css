@@ -1,0 +1,97 @@
+.navbar{
+    display: flex;
+    box-shadow: rgba(0,0,0, .15) 0px -2px 10px 0px;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5em 2em;
+}
+
+.navbar span{
+    cursor: pointer;
+    font-size: 25px;
+    display: none;
+}
+
+.brand{
+    font-size: 1.2em;
+}
+
+.brand .icon{
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.links_list{
+    display: flex;
+    list-style: none;
+}
+
+.links_list li{
+    margin-right: 1em;
+    align-self: center;
+    text-align: center;
+}
+
+.links_list li a{
+    padding: .4em .6em;
+}
+
+.active{
+    background-color: #000;
+    color: white;
+}
+
+.name_display{
+    color: green;
+    font-weight: 900;
+}
+
+.navbar button{
+    color: red;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar{
+        justify-content: space-between;
+        padding: 2.5em 2em;
+    }
+
+    .links_list{
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -60%;
+        padding: 0 1.5em !important;
+        background-color: #000000f2;
+        margin-top: 0;
+        width: 40%;
+    }
+
+    .links_list span{
+        color: red;
+        font-weight: 800;
+        align-self: flex-start;
+        padding: 5px 0;
+        font-size: 30px;
+    }
+
+    .links_list li{
+        padding: 1.4em 0;
+        margin: 0;
+    }
+
+    .links_list li a, .links_list li button{
+        color: white;
+    }
+
+    .active{
+        background-color: white;
+        color: black !important;
+    }
+
+    .navbar span{
+        display: inline;
+    }
+}
